@@ -34,10 +34,10 @@
                 masak, dan
                 berbagai perlengkapan outdoor lainnya tanpa perlu membeli semuanya.
             </p>
-            <a href="#about"
+            <!-- <a href="#about"
                 class="mt-8 inline-block bg-green-900 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-green-700 hover:text-white transition">
                 Jelajahi
-            </a>
+            </a> -->
         </div>
     </section>
     {{-- about Us --}}
@@ -63,10 +63,10 @@
                         Visi kami: Menginspirasi lebih banyak orang untuk menjelajahi alam dan menciptakan kenangan tak
                         terlupakan.
                     </p>
-                    <a href="{{ route('front.about') }}"
+                    <!-- <a href="{{ route('front.about') }}"
                         class="bg-green-800 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
                         Baca Selengkapnya
-                    </a>
+                    </a> -->
                 </div>
 
             </div>
