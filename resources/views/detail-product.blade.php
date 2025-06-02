@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-   <link rel="stylesheet" href="{{ asset('build/assets/app-CkG-sgfl.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="icon" href="{{asset('logo.svg')}}">
 
     <title>Campfires</title>
@@ -29,9 +30,10 @@
                         <h3 class="text-2xl  font-bold text-green-700 mb-5">{{ $product->product_name }}</h3>
 
                         <!-- Harga -->
-                        <h3 class="text-xl font-bold text-green-700 mb-4">Harga: <span class="text-black"> Rp{{ number_format($product->rental_price) }} /Day</span></h3>
+                        <h3 class="text-xl font-bold text-green-700 mb-4">Harga: <span class="text-black">
+                                Rp{{ number_format($product->rental_price) }} /Day</span></h3>
 
-                  
+
                         <!-- Tombol -->
                         <form action="{{ route('checkout') }}" method="GET">
                             @csrf
@@ -68,8 +70,7 @@
                                     <span class="text-sm text-gray-500 font-medium">Rp.
                                         {{ number_format($item->rental_price, 0, ',', '.') }}</span>
                                 </div>
-                                <a href="{{ route('front.productDetail', $item->id_product) }}"
-                                    class=" p-2 rounded-full">
+                                <a href="{{ route('front.productDetail', $item->id_product) }}" class=" p-2 rounded-full">
                                     <img src="{{ asset('assets/Images/icon/arrow.png') }}" alt="Arrow" class="w-5 h-5" />
                                 </a>
                             </div>
